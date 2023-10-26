@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rating Successful</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #6d4949;
+      }
+      .logodiv {
+        background-color: #faeade;
+        border-radius: 50px;
+        max-width: none;
+        height: 150px;
+      }
+      .logo {
+        height: 125px;
+        width: fit-content;
+        margin-left: 70px;
+        margin-top: 10px;
+      }
+      .poster {
+        height: 150px;
+        position: absolute;
+        top: 8px;
+        left: 846px;
+        border-radius: 60px;
+      }
+      h1 {
+        color: aliceblue;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      form {
+        background-color: #faeade;
+        padding: 20px;
+        border-radius: 10px;
+        width: 400px;
+        height: 120px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: left;
+      }
+      input[type="submit"]:hover {
+        background-color: #b46229;
+      }
+      input[type="button"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type="button"]:hover {
+        background-color: #b46229;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logodiv">
+      <img class="logo" src="logo.jpg" alt="website logo" />
+    </div>
+    <img class="poster" src="Home poster.png" alt="abc" />
+    <h1>Congratulations!</h1>
+    <form action="Home.html">
+      <h2>The rating has been submitted successfully.</h2>
+      <input
+        type="button"
+        value="Continue where left"
+        onclick="history.back();history.back();"
+      />
+      <input type="submit" value="Go to home page" />
+    </form>
+  </body>
+</html>
